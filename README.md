@@ -1,2 +1,2 @@
-# text-adventure
-A text adventure game.
+# Text Adventure Role Playing Game
+A text adventure role playing game.

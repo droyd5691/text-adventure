@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://UserInterface.tscn" type="PackedScene" id=2]
+[ext_resource path="res://World.tscn" type="PackedScene" id=5]
+
+[node name="Main" type="Node"]
+script = ExtResource( 1 )
+
+[node name="UserInterface" parent="." instance=ExtResource( 2 )]
+
+[node name="World" parent="." instance=ExtResource( 5 )]
+
+[connection signal="command_issued" from="UserInterface" to="." method="_on_UserInterface_command_issued"]
+[connection signal="updated" from="World" to="." method="_on_World_updated"]

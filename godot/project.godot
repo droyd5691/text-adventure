@@ -8,15 +8,57 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Resource",
+"class": "Command",
+"language": "GDScript",
+"path": "res://resources/commands/Command.gd"
+}, {
+"base": "Item",
+"class": "Door",
+"language": "GDScript",
+"path": "res://resources/items/Door.gd"
+}, {
+"base": "Resource",
+"class": "Item",
+"language": "GDScript",
+"path": "res://resources/items/Item.gd"
+}, {
+"base": "Item",
+"class": "Key",
+"language": "GDScript",
+"path": "res://resources/items/Key.gd"
+}, {
+"base": "Resource",
+"class": "Location",
+"language": "GDScript",
+"path": "res://resources/locations/Location.gd"
+}, {
+"base": "Item",
+"class": "Lock",
+"language": "GDScript",
+"path": "res://resources/items/Lock.gd"
+}, {
+"base": "Command",
+"class": "TestCommand",
+"language": "GDScript",
+"path": "res://resources/commands/TestCommand.gd"
+} ]
+_global_script_class_icons={
+"Command": "",
+"Door": "",
+"Item": "",
+"Key": "",
+"Location": "",
+"Lock": "",
+"TestCommand": ""
+}
+
 [application]
 
 config/name="Text Adventure RPG"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://scenes/Main.tscn"
 config/icon="res://icon.png"
-
-[autoload]
-
-Commands="*res://Commands.gd"
 
 [physics]
 

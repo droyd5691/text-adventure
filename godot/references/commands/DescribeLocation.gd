@@ -2,12 +2,7 @@ class_name DescribeLocation
 extends Command
 
 
-var location: Location setget set_location
-
-
-# warning-ignore:unused_argument
-func set_location(new_location: Location) -> void:
-	pass
+var location: Location
 
 
 func _init(new_location: Location) -> void:

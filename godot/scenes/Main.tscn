@@ -15,4 +15,3 @@ script = ExtResource( 5 )
 [node name="Commands" parent="." instance=ExtResource( 2 )]
 
 [connection signal="valid_text_entered" from="UserInterface" to="." method="_on_UserInterface_valid_text_entered"]
-[connection signal="updated" from="World" to="." method="_on_World_updated"]

@@ -30,8 +30,8 @@ func process_command(command: Command) -> void:
 	if command is TestCommand:
 		handle_test_command(command)
 		return
-	if command is DescribeLocation:
-		handle_describe_location(command)
+#	if command is DescribeLocation:
+#		handle_describe_location(command)
 
 
 func handle_test_command(test_command: TestCommand) -> void:

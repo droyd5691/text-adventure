@@ -36,13 +36,8 @@ var direction_aliases: Dictionary = {
 }
 
 
-var leads_to: Location setget set_leads_to
+var leads_to: Reference
 var direction: int setget set_direction
-
-
-# warning-ignore:unused_argument
-func set_leads_to(new_location: Location) -> void:
-	pass
 
 
 # warning-ignore:unused_argument
@@ -60,7 +55,7 @@ func get_direction_alias(is_short: bool = false) -> String:
 	return output 
 
 
-func _init(new_leads_to: Location, new_direction: int) -> void:
+func _init(new_leads_to: Reference, new_direction: int) -> void:
 	leads_to = new_leads_to
 	direction = new_direction
 

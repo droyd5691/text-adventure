@@ -1,8 +1,12 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scenes/Commands.gd" type="Script" id=1]
-[ext_resource path="res://resources/commands/TestCommand.tres" type="Resource" id=2]
+[ext_resource path="res://references/commands/TestCommand.gd" type="Script" id=2]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+aliases = [  ]
 
 [node name="Commands" type="Node"]
 script = ExtResource( 1 )
-commands = [ ExtResource( 2 ) ]
+commands = [ SubResource( 1 ) ]
